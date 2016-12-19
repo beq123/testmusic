@@ -1,0 +1,312 @@
+@import url("reset.css");
+BODY { margin: 0 auto; padding: 0; background-image: url(../images/mp3taketop.jpg); background-size:1024px;
+background-repeat: no-repeat; background-attachment:fixed; background-position:center top; padding: 0px; }
+#bgtop { width: 100%; height: 100%; position: absolute; left: 0px; top: 32px; z-index: 0; }
+.strtop { width:100%; height:96px; }
+.searchresult_area {margin-top: 16px;}
+.header_wrapper {width: 100%; height: 200px; margin: 0; margin-bottom: 20px;}
+.header {width: 350px; margin: 0 auto; text-align: center; height: 100px; position: relative;}
+.header h1 {position: relative; margin:0 auto; top: 70px; cursor: pointer;}
+.header h1 a {display: block; position: relative; margin:0 auto;}
+.header h1 a span {display:none;}
+.search_wrapper {width: 100%; height: 53px; bottom: -20px; position: absolute; z-index:10; left: 0; margin: 0 auto;}
+.search_wrapper .icon {position: absolute; width: 18px; height: 18px; top: 18px; right: 19px;}
+.search_wrapper .icon:hover, .icon:active {background-position: 0 -24px;}
+.search_wrapper .icon span {display: none;}
+.search_wrapper .bar input {width: 270px; font-size: 17px; float:left; font-weight: normal; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; background: transparent; margin: 17px 0 0 18px; border: 0;}
+.form.input_wrapper {width: auto; margin-right: 19px;}
+.search_wrapper .bar input {padding: 0; margin: 14px 13px;}
+.header_wrapper {text-align:center; overflow:hidden; background:transparent no-repeat scroll center top transparent; margin-top:-7px;height:36px;margin-bottom:-33px;}
+.header h1 a {width:202px; height:24px; background:url("../index.html") no-repeat scroll right top transparent;}
+.search_wrapper {background:#1FEFE1; width:320px;height: 50px}
+.search_wrapper .icon {background: url("../images/search_icon.png")}
+.search_wrapper .bar input {font-family:"Helvetica","Arial",sans-serif; color:#EF1F25;}
+/* a{color:#000;} a:hover{color:#000;} .#top_content a{color:#000;} .download_link a:hover{color:#c0ffff;} */
+.cpr { margin-top:5px; margin-bottom:5px;color: #000000; font-size: 11px; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-shadow: 0.2em 0.3em 0.2em rgba(0, 0, 0, .2) }
+.klg { margin-top:5px; margin-bottom:5px;color: #FF1010; font-size: 11px; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif;  }
+.download_link a{color:#000000;}
+.playb a{color:#000000;}
+.playb a:hover{color:#FF0000;}
+.#top a{color:#000;}
+.download_link a:hover{color:#FF0000;}
+.download2_link a:link {color:#000000;}
+.download2_link a:visited {color:#000000;}
+.download2_link a:hover{font-weight:bold;}
+.download2_link {margin-top:5px; margin-bottom:5px;color: #ff8040; font-size:14px; line-height:25px;}
+.footer_links {bottom:5px; background-color: #A5B7FF;font-size:11px; height:auto; margin:0 auto;position: relative;text-align: center; -moz-border-radius:8px; border:2px solid #14867E;}
+.lastsearch{font-size:12px; line-height: 20px; margin:0 auto; position: relative;text-align: center; height:auto; -moz-border-radius:8px; border:2px solid #14867E; background: rgb(47,229,217);}
+.footer_links a{font-size:11px; margin:0 auto;position: relative;text-align: center; }
+.share_btn {background-color:#78d4ec; border:1px solid #e0e3e9; font-size:14px;margin:20px;}
+.share_btn_res {float:left; margin-right:10px; vertical-align:middle; margin-top: 1px; }
+.play_btn_res {position:absolute; right:100px; vertical-align:middle; margin-top:20px;}
+.one_result3{margin-bottom:10px; height:20px; padding:5px; padding-bottom:0px; background-color:#FFFFFF;-moz-border-radius: 5px;border-radius: 5px; border:1px solid #666;}
+.one_result2{margin-bottom:10px; height:20px; padding:5px; padding-bottom:0px;}
+/*.download_link {float:right; margin-right:2px; margin-top:12px;color: #ff8040; font-size: 9px; font-weight: bold;} */
+.download_link { position:absolute; right:10px; margin-right:2px; margin-top:-45px; font-size:11px; font-family:Century Gothic,sans-serif; font-weight:bold; -moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; background-color:#EEEEEE; background-image: url(../images/back05.gif); border-style:outset; border-color:#CCCCCC; border-width:2px; color:#000000; }
+.playb { position:absolute; right:100px; font-size:11px; margin-top:-45px; font-family:Century Gothic,sans-serif; font-weight:bold; color:#000000; -moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; background-color:#EEEEEE; background-image: url(../images/back05.gif); border-style:outset; border-color:#CCCCCC; border-width:2px; }
+.filesize {float:right; margin-right: 40px; margin-top:0px; color: #3333FF; font-size: 9px; font-weight: bold;}
+/*.file_size {color: #CC3300; font-size: 10px; font-weight: bold;} */
+ul.button-rounded{ }
+html, body, #container { height: 50%; margin: 0; padding: 0; }
+body > #container { height: auto; min-height: 50%; }
+#content { padding-bottom: 5.8em; }
+#footerbot { clear: both; position: relative; z-index: 10; height: 3em; margin-top: -3em; }
+ul.search_result li { margin-bottom:20px; height:auto; padding-bottom:0px; background-color:#60ECFC;-moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; }
+ul.search_result li:hover { background-color: #E7EE26 }
+.results { width:auto; height:auto; margin-left: auto; margin-bottom:30px; margin: 0 auto; bottom: 0px z-index: 9999; min-width: 50%;-moz-opacity:.90;filter:alpha(opacity=90);opacity:.90; }
+.s_top_text { font-size:11px; margin-top:5px; }
+.title_song { margin-top: 5px; margin-left:18px; font-size: 10px; font-weight:bold; text-align:left; color: #000; margin-bottom:auto;  width:475px; }
+.file_size { color: #CC3300; margin-top: 5px; margin-left:20px; font-size: 10px; font-weight:bold; text-align:left;  margin-bottom:auto;  width:475px; }
+.desc { font-family: lucida grande,tahoma,verdana,arial,sans-serif; color: rgb(34, 34, 34); margin-top: 5px; margin-left:20px; font-size: 10px; font-weight:normal; text-align:left; margin-bottom:auto; width:475px; }
+/* #container { float:left; width:100%; } */
+.titdesc { width: 950px; margin-left:14px; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif;color: #DCF308; text-align: center; font-size: 17px;  }
+#top { margin-top:0px; margin-bottom:auto; margin-right:auto; margin-left:auto; height:auto;
+/* background-image:url('../images/bg3.png'); background-repeat:repeat-x; background-position:top; */
+/* border-bottom:1px solid #222; */
+ -moz-border-radius: 5px;border-radius: 5px; border:0px; solid #ffffff; }
+.hstitle {display:none;}
+#top_content_right { float:right; margin-right: 190px; height:32px; padding-top:15px; font-weight: bold; color: #fff; z-index:1; }
+#top_content_left { float:left; margin-left:195px; height:32px; padding-top:10px; font-weight: bold; color: #fff; z-index:1; }
+#top_content { height:64px; padding-top:0px; font-weight:bold; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-align: center; font-size: 12px; z-index:1; margin-bottom:auto; }
+H1 { font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-align: center; font-size: 20px;margin-top:auto; padding-top:auto; padding-bottom:auto; margin-bottom:auto; margin-right:auto; margin-left:auto; background-image:url('../images/bg3.png'); background-size:100% 64px; background-repeat:repeat-x; background-position:top; }
+.masking{ position: relative; overflow: hidden; margin: 0px auto; margin-top:-16px; width: 1024px; }
+.header1{ float: left; width: 100%; /* background: #f5f6f6; /* Old browsers */ background:url(../images/bg3.png) repeat-x; background-size:100% 100%; background-attachment: fixed; background-position: center top;
+/* background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6+ */
+ -moz-opacity:.99;filter:alpha(opacity=99);opacity:1; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; }
+.colleft{ position: relative; width: 100%; right: 325px; }
+.col1{ position: relative; overflow: hidden; float: left; width: 315px; left: 980px; }
+.col2{ position: relative; overflow: hidden; float: left; width: 640px; left: 15px; }
+.footer{ float: left; width: 100%; }
+.download_link2 a{color:#000000;}
+.download_link2 a:hover{color:#FF0000;}
+.download_link2 { font-size:11px; font-family:Century Gothic,sans-serif; font-weight:bold; text-align:center; margin-left:auto; margin-right:auto; margin-top:5px; margin-bottom:5px; width:100px; -moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; background-color:#EEEEEE; background-image: url(../images/back05.gif); border-style:outset; border-color:#CCCCCC; border-width:2px; color:#000000; }
+.fr728 { display: block; border: 1px solid #ECF8EA; width: 728px; height: 90px; margin-left: auto; margin-right: auto; }
+.fr468 { display: block; border: 1px solid #ECF8EA; width: 468px; height: 60px; margin-left: auto; margin-right: auto;}
+H2 { font-size:13px; font-weight:bold; }
+.do_tips p{padding-top: 5px;padding-bottom: 5px;}
+.colmenu{ position: relative; width: 980px; left: 0px;}
+.colplay{ position: relative; overflow: hidden; float: left; width: 640px; left: 5px;}
+.collist{position: relative; overflow: hidden; float: right; width: 315px; right: 10px;}
+
+.mtimg { width: 588px; height: 194px;}
+
+.mtimg img {width: 70%; height: auto; position: absolute; top: 25px; bottom:0px; left: 0; right:0; margin-left: auto; margin-right: auto;}
+.wscr {width:300px;}
+
+ table {
+        border-collapse: collapse;
+        padding: 0;
+        margin: 0 0 11px 0;
+        width: 100%;
+    }
+
+    table th {
+        text-align: left;
+        border-bottom: 2px solid #eee;
+        vertical-align: bottom;
+        padding: 0 10px 10px 10px;
+        text-align: right;
+    }
+
+    table td {
+        border-bottom: 1px solid #eee;
+        vertical-align: top;
+        padding: 10px;
+        text-align: right;
+    }
+
+
+	 table th:nth-child(1),
+    table td:nth-child(1) {
+        text-align: left;
+        padding-left: 0;
+        font-weight: bold;
+    }
+
+
+.nors {position:relative;width:auto; height:60px;margin:0 auto;padding:20px 20px 20px 20px;background-color:#eee;border-radius:18px;-moz-border-radius:18px;border:black solid 2px;box-shadow:10px 10px 10px #000000;margin-left:20px;}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+BODY { margin: 0 auto; padding: auto; background-image: url(../images/mp3taketop.gif); background-size:270px; width:80px;height:80px;background-repeat: no-repeat; background-attachment:fixed; background-position:center top; padding: 0px; overflow-x:hidden;}
+
+html, body, #container { width:auto; height: 100%; margin: 0; padding: 0; }
+body > #container { height: auto; }
+H1 { font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-align: center; font-size: 8px; text-shadow: 0.2em 0.2em 0.2em rgba(178, 220, 66, .5); margin-top:auto; padding-top:auto; padding-bottom:auto; margin-bottom:auto; margin-right:auto; margin-left:auto; background-image:url('../images/bg3.png'); background-size:100% 64px; background-repeat:repeat-x; background-position:top; }
+.masking{ position: relative; overflow: hidden; margin: 0px auto; margin-top:-16px; width: 265px; }
+.header1{ float: left; width: 100%; /* background: #f5f6f6; /* Old browsers */ background:url(../images/bg3.png) repeat-x; background-size:100% 100%; background-attachment: fixed; background-position: center top; /* background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6+ */ -moz-opacity:.99;filter:alpha(opacity=99);opacity:1; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; }
+
+.titdesc { width: 260px; margin:0px auto; padding-right:0px; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-align: center; font-size: 10px; /*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); */ text-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, .2) }
+
+#content { padding-bottom: 2.2em; }
+
+.header {width: 270px; margin: 0 auto; top:-120px;text-align: center; height: 100px; position: relative;}
+search_wrapper {width: 100%; height: 53px; bottom: 19px; position: absolute; z-index:10; left: 0; margin: 0 auto;}
+.search_wrapper .bar input {width: 200px; font-size: 17px; float:left; font-weight: normal; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; background: transparent; margin: 17px 0 0 18px; border: 0;}
+
+ul.search_result li { width:40%; margin-bottom:20px; height:auto; padding-bottom:0px; background-color:#60ECFC;-moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; }
+ul.search_result li:hover { background-color: #E7EE26 }
+.collist{position: relative; overflow: hidden; float: left; width: 100%; right: 0px; margin-left:auto; margin-right:auto;}
+
+.title_song { position:relative;margin-top: 5px; margin-left:18px; font-size: 10px; font-weight:bold; text-align:left; color: #000; margin-bottom:auto;  width:auto; }
+.file_size { color: #CC3300; margin-top: 5px; margin-left:20px; font-size: 10px; font-weight:bold; text-align:left;  margin-bottom:auto;  width:475px; }
+.desc { position:relative; font-family: lucida grande,tahoma,verdana,arial,sans-serif; color: rgb(34, 34, 34); margin-top: 5px; margin-left:20px; font-size: 10px; font-weight:normal; text-align:left; margin-bottom:auto; width:auto; }
+.download_link { position:relative; right:0px; margin-left:20px; margin-top:5px; margin-bottom:5px; width:70px; text-align:center; font-size:11px; font-family:Century Gothic,sans-serif; font-weight:bold; -moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; background-color:#EEEEEE; background-image: url(../images/back05.gif); border-style:outset; border-color:#CCCCCC; border-width:2px; color:#000000; }
+.playb { position:absolute; left:125px; font-size:11px; margin-top:5px; width:60px; margin-bottom:5px; text-align:center; font-family:Century Gothic,sans-serif; font-weight:bold; color:#000000; -moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; background-color:#EEEEEE; background-image: url(../images/back05.gif); border-style:outset; border-color:#CCCCCC; border-width:2px; }
+.klg { text-align:center; position:relative; width:225px; margin-left:10px; margin-top:5px; margin-bottom:5px;color: #FF1010; font-size: 16px; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif;  }
+.wscr {width:25%; height:auto; margin-left:5px;position: relative;}
+.nors {position:relative; width:30%; height:80px; margin-left:10px; padding:20px 20px 20px 20px;background-color:#eee;border-radius:18px;-moz-border-radius:18px;border:black solid 2px;box-shadow:10px 10px 10px #000000;}
+
+table,
+    tbody {
+        display: block;
+        width: 100%;
+		}
+
+
+
+
+.lastsearch a {
+    padding: 0 12px !important;
+	line-height: 25px;
+}
+
+}
+
+
+/*------------------------------------------------------------- */
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+BODY { margin: 0 auto; padding: auto; background-image: url(../images/mp3taketop.gif); background-size:340px; width:80px;height:80px;background-repeat: no-repeat; background-attachment:fixed; background-position:center top; padding: 0px; overflow-x:hidden;}
+
+html, body, #container { width:auto; height: 100%; margin: 0; padding: 0; }
+body > #container { height: auto; }
+H1 { font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-align: center; font-size: 8px; text-shadow: 0.2em 0.2em 0.2em rgba(178, 220, 66, .5); margin-top:auto; padding-top:auto; padding-bottom:auto; margin-bottom:auto; margin-right:auto; margin-left:auto; background-image:url('../images/bg3.png'); background-size:100% 64px; background-repeat:repeat-x; background-position:top; }
+.masking{ position: relative; overflow: hidden; margin: 0px auto; margin-top:-16px; width: 340px; }
+.header1{ float: left; width: 100%; /* background: #f5f6f6; /* Old browsers */ background:url(../images/bg3.png) repeat-x; background-size:100% 100%; background-attachment: fixed; background-position: center top; /* background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6+ */ -moz-opacity:.99;filter:alpha(opacity=99);opacity:1; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; }
+
+.titdesc { width: 325px; margin:0px auto; padding-right:0px; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-align: center; font-size: 14px; /*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); */ text-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, .2) }
+
+#content { padding-bottom: 2.5em; }
+.header {width: 330px; margin: 0 auto; top:-100px;text-align: center; height: 100px; position: relative;}
+search_wrapper {width: 100%; height: 53px; bottom: 19px; position: absolute; z-index:10; left: 0; margin: 0 auto;}
+.search_wrapper .bar input {width: 260px; font-size: 14px; float:left; font-weight: normal; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; background: transparent; margin: 17px 0 0 18px; border: 0;}
+
+.collist{position: relative; overflow: hidden; float: left; width: 100%; right: 0px; margin-left:auto; margin-right:auto;}
+ul.search_result li { width:51%; margin-bottom:20px; height:auto; padding-bottom:0px; background-color:#60ECFC;-moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; }
+ul.search_result li:hover { background-color: #E7EE26 }
+
+.title_song { position:relative;margin-top: 5px; margin-left:18px; font-size: 10px; font-weight:bold; text-align:left; color: #000; margin-bottom:auto;  width:auto; }
+.file_size { color: #CC3300; margin-top: 5px; margin-left:20px; font-size: 10px; font-weight:bold; text-align:left;  margin-bottom:auto;  width:475px; }
+.desc { position:relative; font-family: lucida grande,tahoma,verdana,arial,sans-serif; color: rgb(34, 34, 34); margin-top: 5px; margin-left:20px; font-size: 10px; font-weight:normal; text-align:left; margin-bottom:auto; width:auto; }
+.download_link { position:relative; right:0px; margin-left:20px; margin-top:5px; margin-bottom:5px; width:70px; text-align:center; font-size:11px; font-family:Century Gothic,sans-serif; font-weight:bold; -moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; background-color:#EEEEEE; background-image: url(../images/back05.gif); border-style:outset; border-color:#CCCCCC; border-width:2px; color:#000000; }
+.playb { position:absolute; left:125px; font-size:11px; margin-top:5px; width:60px; margin-bottom:5px; text-align:center; font-family:Century Gothic,sans-serif; font-weight:bold; color:#000000; -moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; background-color:#EEEEEE; background-image: url(../images/back05.gif); border-style:outset; border-color:#CCCCCC; border-width:2px; }
+.klg { text-align:center; position:relative; width:280px; margin-left:10px; margin-top:5px; margin-bottom:5px;color: #FF1010; font-size: 11px; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif;  }
+.wscr {width:34%; height:auto; margin-left:3px;position: relative;}
+
+table,
+    tbody {
+        display: block;
+        width: 100%;
+		}
+
+.nors {position:relative;width:250px; height:60px;margin:0 auto;padding:20px 20px 20px 20px;background-color:#eee;border-radius:18px;-moz-border-radius:18px;border:black solid 2px;box-shadow:10px 10px 10px #000000;margin-left:10px;}
+
+
+
+.lastsearch a {
+    padding: 0 12px !important;
+	line-height: 25px;
+}
+
+}
+
+
+
+/*------------------------------------------------------------- */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+BODY { margin: 0 auto; padding: auto; background-image: url(../images/mp3taketop.gif); background-size:480px; width:80px;height:80px;background-repeat: no-repeat; background-attachment:fixed; background-position:center top; padding: 0px; overflow-x:hidden;}
+
+html, body, #container { width:auto; height: 100%; margin: 0; padding: 0; }
+body > #container { height: auto; }
+H1 { font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-align: center; font-size: 12px; text-shadow: 0.2em 0.2em 0.2em rgba(178, 220, 66, .5); margin-top:auto; padding-top:auto; padding-bottom:auto; margin-bottom:auto; margin-right:auto; margin-left:auto; background-image:url('../images/bg3.png'); background-size:100% 64px; background-repeat:repeat-x; background-position:top; }
+.masking{ position: relative; overflow: hidden; margin: 0px auto; margin-top:-16px; width: 480px; }
+.header1{ float: left; width: 100%; /* background: #f5f6f6; /* Old browsers */ background:url(../images/bg3.png) repeat-x; background-size:100% 100%; background-attachment: fixed; background-position: center top; /* background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6+ */ -moz-opacity:.99;filter:alpha(opacity=99);opacity:1; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; }
+
+.titdesc { width: 450px; margin:0px auto; padding-right:0px; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-align: center; font-size: 14px; /*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); */ text-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, .2) }
+
+#content { padding-bottom: 3.2em; }
+.header {width: 300px; margin: 0 auto; top:-80px;text-align: center; height: 100px; position: relative;}
+.collist{position: relative; overflow: hidden; width: 100%; right: 0px; margin-left:auto; margin-right:auto;}
+ul.search_result li { width:72%; margin-bottom:20px; height:auto; padding-bottom:0px; background-color:#60ECFC;-moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; }
+ul.search_result li:hover { background-color: #E7EE26 }
+
+.title_song { position:relative;margin-top: 5px; margin-left:18px; font-size: 10px; font-weight:bold; text-align:left; color: #000; margin-bottom:auto;  width:auto; }
+.file_size { color: #CC3300; margin-top: 5px; margin-left:20px; font-size: 10px; font-weight:bold; text-align:left;  margin-bottom:auto;  width:475px; }
+.desc { position:relative; font-family: lucida grande,tahoma,verdana,arial,sans-serif; color: rgb(34, 34, 34); margin-top: 5px; margin-left:20px; font-size: 10px; font-weight:normal; text-align:left; margin-bottom:auto; width:auto; }
+.download_link { position:relative; right:0px; margin-left:20px; margin-top:5px; margin-bottom:5px; width:70px; text-align:center; font-size:11px; font-family:Century Gothic,sans-serif; font-weight:bold; -moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; background-color:#EEEEEE; background-image: url(../images/back05.gif); border-style:outset; border-color:#CCCCCC; border-width:2px; color:#000000; }
+.playb { position:absolute; left:125px; font-size:11px; margin-top:5px; width:60px; margin-bottom:5px; text-align:center; font-family:Century Gothic,sans-serif; font-weight:bold; color:#000000; -moz-border-radius: 5px;border-radius: 5px; border:1px solid #666; background-color:#EEEEEE; background-image: url(../images/back05.gif); border-style:outset; border-color:#CCCCCC; border-width:2px; }
+.klg { text-align:center; position:relative; width:440px; margin-left:10px; margin-top:5px; margin-bottom:5px;color: #FF1010; font-size: 11px; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif;  }
+.wscr {width:48%; height:auto; margin-left:5px;position: relative;}
+.nors {position:relative;width:410px; height:60px;margin:0 auto;padding:20px 20px 20px 20px;background-color:#eee;border-radius:18px;-moz-border-radius:18px;border:black solid 2px;box-shadow:10px 10px 10px #000000;margin-left:10px;}
+
+table,
+    tbody {
+        display: block;
+        width: 100%;
+		}
+
+
+
+.lastsearch a {
+    padding: 0 12px !important;
+	line-height: 25px;
+}
+
+}
+
+/*------------------------------------------------------------- */
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+BODY { margin: 0 auto; padding: auto; background-image: url(../images/mp3taketop.gif); background-size:800px; width:80px;height:80px;background-repeat: no-repeat; background-attachment:fixed; background-position:center top; padding: 0px; overflow-x:hidden;}
+
+html, body, #container { width:auto; height: 100%; margin: 0; padding: 0; }
+body > #container { height: auto; }
+H1 { font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-align: center; font-size: 16px; text-shadow: 0.2em 0.2em 0.2em rgba(178, 220, 66, .5); margin-top:auto; padding-top:auto; padding-bottom:auto; margin-bottom:auto; margin-right:auto; margin-left:auto; background-image:url('../images/bg3.png'); background-size:100% 64px; background-repeat:repeat-x; background-position:top; }
+.masking{ position: relative; overflow: hidden; margin: 0px auto; margin-top:-16px; width: 795px; }
+.header1{ float: left; width: 100%; /* background: #f5f6f6; /* Old browsers */ background:url(../images/bg3.png) repeat-x; background-size:100% 100%; background-attachment: fixed; background-position: center top; /* background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6+ */ -moz-opacity:.99;filter:alpha(opacity=99);opacity:1; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; }
+
+.titdesc { width: 750px; margin:0px auto; padding-right:0px; font-family: Ubuntu, "URW Gothic L", Veranda, Tahoma, sans-serif; text-align: center; font-size: 16px; /*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); */ text-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, .2) }
+
+#content { padding-bottom: 4.7em; }
+
+.colplay{ position: relative; overflow: hidden; float: left; width: 769px; left: 5px;}
+
+ul.search_result li { width:99%; margin-bottom:20px; height:auto; padding-bottom:0px; background-color:#15FCAF;-moz-border-radius: 5px;border-radius: 5px; border:2px solid #14187A; }
+ul.search_result li:hover { background-color: #36DB93 }
+.colmenu{ position: relative; width: 980px; left: 0px;}
+
+.collist{position: relative; overflow: hidden; width: 100%; right: 0px; margin-left:auto; margin-right:auto;}
+.wscr {width:78%; height:auto; margin-left:5px;position: relative;}
+
+.nors {position:relative; width:699px; height:60px; margin-left:10px; padding:20px 20px 20px 20px;background-color:#eee;border-radius:18px;-moz-border-radius:18px;border:black solid 2px;box-shadow:10px 10px 10px #000000;}
+
+table,
+    tbody {
+        display: block;
+        width: 100%;
+		}
+
+
+
+.lastsearch a {
+    padding: 0 12px !important;
+	line-height: 25px;
+}
+
+}
